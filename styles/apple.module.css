@@ -1,0 +1,20 @@
+.cluster {
+    border: 3px solid black;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* on hover: set cluster to very light gray and change the pointer icon*/
+.cluster:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+.result {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.result * {
+    pointer-events: none;
+}
