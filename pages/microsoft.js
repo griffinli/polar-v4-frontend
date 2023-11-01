@@ -12,7 +12,7 @@ export default function Home() {
 
 
     const debouncedUpdateQuestion = React.useMemo(
-        () => debounce((event) => setQuestion(event.target.value), 300)
+        () => debounce((event) => setQuestion(event.target.value), 600)
         , []);
 
     React.useEffect(() => {
@@ -110,7 +110,7 @@ export default function Home() {
 
                 {responseData.map((result, index) =>
                     <div className={microsoftStyles.result} onClick={showAnswers} key={index}>
-                        <h3>{result.question.name}</h3>
+                        <h3 className={styles.title}>{result.question.name}</h3>
 
                         <div className={styles.additional_info}>
                             <h5>Max upvotes: {result.maxUpvotes}</h5>
